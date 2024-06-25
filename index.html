@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pantalla">
+            <input type="text" class="screen" id="screen" disabled/>
+            <input type="button" value="C" class="btn" onclick="limpiar()"/>
+        </div>
+        <div class="keys">
+            <input type="button" value="7" class="btn" onclick="incluirNumero('7')"/>
+            <input type="button" value="8" class="btn" onclick="incluirNumero('8')"/>
+            <input type="button" value="9" class="btn" onclick="incluirNumero('9')"/>
+
+            <input type="button" value="/" class="operator" onclick="incluirOperador('/')"/>
+            <input type="button" value="4" class="btn" onclick="incluirNumero('4')"/>
+            <input type="button" value="5" class="btn" onclick="incluirNumero('5')"/>
+            <input type="button" value="6" class="btn" onclick="incluirNumero('6')"/>
+
+            <input type="button" value="*" class="operator" onclick="incluirOperador('*')"/>
+            <input type="button" value="1" class="btn" onclick="incluirNumero('1')"/>
+            <input type="button" value="2" class="btn" onclick="incluirNumero('2')"/>
+            <input type="button" value="3" class="btn" onclick="incluirNumero('3')"/>
+
+            <input type="button" value="-" class="operator" onclick="incluirOperador('-')"/>
+            <input type="button" value="0" class="btn" onclick="incluirNumero('0')"/>
+
+            <input type="button" value="." class="operator" onclick="incluirNumero('.')"/>
+            <input type="button" value="=" class="btn" onclick="calcular()"/>
+            <input type="button" value="+" class="operator" onclick="incluirOperador('+')"/>
+        </div>
+    </div>
+</body>
+</html>

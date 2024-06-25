@@ -1,0 +1,68 @@
+.container{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.screen {
+    width: 155px;
+    color: black;
+    border: none;
+    background-color: rgba(187, 183, 183, 0.527);
+}
+
+.pantalla .btn{
+    color: white;
+    background-color: rgba(105, 104, 104, 0.8);
+}
+.pantalla .btn:active{
+    background-color: rgba(105, 104, 104, 1);
+}
+
+input{
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.keys, .pantalla{
+    width: 220px;
+    max-width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.keys .btn{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.keys .operator{
+    color: white;
+    background-color: rgba(105, 104, 104, 0.8);
+}
+.keys .btn:active{
+    background-color: rgb(0, 0, 0);
+}
+.keys .operator:active{
+    background-color: rgba(105, 104, 104, 1);
+}
+
+.btn,
+.operator {
+    width: 50px;
+    border: none;
+}
